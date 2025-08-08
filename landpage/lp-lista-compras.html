@@ -1,49 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super App - Lista de Compras</title>
-  <link href="../assets/css/bootstrap.css" rel="stylesheet">
-  <link href="../assets/css/styles.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super App - Lista de compras</title>
+    <link href="../assets/css/bootstrap.css" rel = "stylesheet">
+    <link href="../assets/css/style.css" rel = "stylesheet">
 </head>
 
 <body>
-  <header> 
-    <nav class="navbar">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      ShopList Pro
-    </a>
-  </div>
-    </nav>
-  </header>
+    <header>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+  <div class="container">
+      <a class="navbar-brand d-flex aling-items-center" href="#">
+        <i class="bi bi-list-check me-2"></i>
+        ShopList Pro
+      </a>
 
-  <main class="degrade"> 
-    <div class="container align-items-center"> 
-      <div class="row h-384">
-        <div class=" col ">
-          <h1> Organize suas compras de forma inteligente</h1>
-          <p>
-            O ShopList Pro é o app definitivo para criar, organizar e copartilhar suas listas de compras.
-            Nunca mais esqueça esse item.
-          </p>
-        </div>
-        <div class=" col">
-          <img src=" https://placehold.co/320x384">
-        </div>
-      </div>
+    <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button> 
+
+    <div class=" collapse navbar-collapse" id="navbarNav">
+        <ul class=""navbar-nav ms-auto me-4>
+            <li class="nav-item">
+                <a class="nav-link" href="#recursos">Recursos</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>     
+        </ul>
+        <a href="dowload" class="btn btn diwload-header">dowload
     </div>
-  </main>
+  </div>
+</nav>
 
-  <footer>
+<section class="hero-section">
+    <div class="container">
+        <div class="row lign-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title fade-in-up">
+                    Organize suas compras de forma inteligente
+                </h1>
+                <p class="hero-subtitle fade in up">
+                     O ShopList Pro é o app definitivo para criar, organizar e compartilhar 
+                    suas listas de compras. Nunca mais esqueça um item!
+                </p>
+                <div class="fade-in-up">
+                    <a href="'#" class="btn-ios">
+                        <i class="bi-bi-apple"></i>
+                        Downlkoad Ios
+                    </a>
+                    <a href="#"
+                        class="btn-android">
+                        <i class="bi bi-google-play"></i>
+                        Download Android
+                </div>
+            </div>
+        </div>
+     
+    </div>
+</section>
 
-  </footer>
+<section id="recursos" class="features-section">
+    <div class="container">
+        <h2 class="features-title animate-on-scroll">
+            Recursos que fazem a diferença
+        </h2>
+        <p class="features-subtitle animate-on-scroll">
+            Descubra por que milhares de pessoas escolhem o ShopList Pro
+        </p>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card-animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="bi-bi-share"></i>
+                    </div>
+                    <h3 class="feature-title">Compartilhamento em tempo real</h3>
+                    <p class="feature-description">Compartilhe a lista com sua 
+                    familia e amigos</p>
+                </div>
+            </div>
+        </div>
 
-  <script src="../assets/js/bootstrap.bundle.js"> </script>
+        <div class="col-lg-4-md-6">
+            <div class="feature-card-animate-on-scroll">
+                <div class="featur-icon">
+                    <i class="bi-bi-lightbulb"></i>
+                </div>
+                <h3 class="feature-title">Sugestões inteligentes</h3>
+                <p class="feature-description"> 
+                    IA que aprende seus hábitos e sugere produtos baseados
+                    no seu hitórico de compras
+                </p>
+            </div>
+        </div>
+        <div class="vol-lg-4-col-md-6">
+            <div class="feature-card-animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="bu-bi-geo-alt"></i>
+                </div>
+                <h3 class="feature-title">Organização por localização</h3>
+                <p class="feature-description">
+                    Organize itens por corredores do mercado para faciltar sua compra
+                </p>
+            </div>
+        </div>
+        <section id="precos" class="princing-setions"> 
+            <div class="conteiner">
+                <h2 class="princing-title-animate-on-scroll">
+                    Planos para todas as necessidades 
+                </h2>
+                <p class="princing-subtitle-animate-on-scroll">
+                    Escolha o plano ideal para você!
+                </p>
+
+                <div class="row-justify-content-center-g-4">
+                    <div class="col-lg-4-col-md-6">
+                        <h3 class="princing-plan">Gratuito</h3>
+                        <div class="princing-price">R$ 0 <span class="pricing-period">/mes</span></div>
+                        <ul class="pricing-features">
+                            <li>ATé 5 listas</li>
+                            <li>Compartilhamento básico</li>
+                            <li>Sincronização em nuvem</li>
+                        </ul>
+                        <a href="#" class="btn-pricing btn-pricing-free"> Começar grátis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="testimonials-section">
+            <div class="conteiner">
+                <div class="row-g-4">
+                    <div class="col-lg-4-col-md-6">
+                        <div class="testimonial-card-animate-on-scroll">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">M5</div>
+                           </div>
+                       <div class="testimonial-name">Maria Silva</div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+                <p class="testimonial-text">"Revolucionou minhas compras! Agora meu marido
+                compartilhamos listas! A compra ficar bem mais completa.
+                </p>  
+            </div>               
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                
+            </div>
+                        
+        </section>
+
+        
+
+    </header>
+
+              
+    </main>
+    <foorter>  |
+    </foorter>
+      <script src="../assets/js/bootstrap.bundle.js"></script>    
+ 
 </body>
-
 </html>
